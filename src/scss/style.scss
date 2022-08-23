@@ -1,0 +1,7 @@
+//Обнуление стилей браузеров
+@import "_normalize";
+//Подключение переменных
+@import "_variables";
+
+//Подключение блоков
+@import "./blocks/_header";
