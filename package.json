@@ -1,0 +1,33 @@
+{
+  "name": "test-page-formula",
+  "version": "1.0.0",
+  "description": "Это тестовое задание по верстке.",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --mode development --open",
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/innabatalova/Test-page-Formula.git"
+  },
+  "author": "Inna Batalova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/innabatalova/Test-page-Formula/issues"
+  },
+  "homepage": "https://github.com/innabatalova/Test-page-Formula#readme",
+  "devDependencies": {
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "scss-loader": "^0.0.1",
+    "style-loader": "^3.3.1",
+    "svg-inline-loader": "^0.8.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0"
+  }
+}
