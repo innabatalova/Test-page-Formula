@@ -17,6 +17,7 @@ input {
 
 button,
 label {
+  border: none;
   cursor: pointer;
 }
 
@@ -39,9 +40,8 @@ i {
   margin: auto;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 1550px) {
   .container {
-    max-width: 100%;
-    margin: auto;
+    max-width: 90%;
   }
 }
