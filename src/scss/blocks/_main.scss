@@ -26,6 +26,7 @@
       line-height: 29px;
       width: 30%;
       margin-bottom: 50px;
+      color: #2b2b2b;
     }
 
     &__button {
@@ -41,7 +42,6 @@
 
   &__img {
     max-height: 750px;
-    height: 50vw;
     background-size: cover;
   }
 }

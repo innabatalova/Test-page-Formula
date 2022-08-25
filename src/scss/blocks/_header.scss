@@ -66,12 +66,13 @@
     display: flex;
     padding: 0;
 
-    &__item {
+    &__item a {
       font-weight: 400;
       font-size: 16px;
       line-height: 19px;
       margin-right: 40px;
       cursor: pointer;
+      color: #000000;
     }
   }
 }

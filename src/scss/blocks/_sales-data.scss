@@ -1,0 +1,156 @@
+.sales-data {
+  background-color: #f1f6fc;
+  &__wrap {
+    padding-top: 120px;
+    padding-bottom: 127px;
+  }
+
+  &__info {
+    padding-bottom: 70px;
+    display: flex;
+
+    &__title {
+      position: relative;
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 53px;
+      width: 43%;
+      margin-bottom: 30px;
+      margin-right: 178px;
+
+      &::before {
+        content: "";
+        width: 105px;
+        height: 3px;
+        background-color: $primaryBlue;
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+      }
+    }
+
+    &__text {
+      position: relative;
+      top: -12px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 29px;
+      color: #2b2b2b;
+      width: 37%;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__card {
+    padding: 40px 30px;
+    border-radius: 30px;
+    width: 24%;
+    height: 186px;
+    background-color: #ffffff;
+
+    &__title {
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 28px;
+      margin-bottom: 25px;
+
+      &_num {
+        font-size: 54px;
+        line-height: 45px;
+        color: $primaryBlue;
+      }
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #767676;
+    }
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .sales-data {
+    &__info {
+      &__text {
+        top: 0;
+      }
+    }
+    &__cards {
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      width: 48%;
+      margin-bottom: 55px;
+    }
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .sales-data {
+    &__info {
+      &__title {
+        width: 50%;
+        margin-right: 50px;
+      }
+
+      &__text {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .sales-data {
+    &__wrap {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    &__info {
+      flex-direction: column;
+      padding-bottom: 0;
+
+      &__title {
+        font-size: 24px;
+        line-height: 32px;
+        width: 100%;
+        margin-bottom: 60px;
+
+        &::before {
+          bottom: -20px;
+        }
+      }
+
+      &__text {
+        font-size: 14px;
+        line-height: 22px;
+        width: 100%;
+        margin-bottom: 50px;
+      }
+    }
+
+    &__cards {
+      flex-direction: column;
+    }
+
+    &__card {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 30px;
+
+      &__text {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}
