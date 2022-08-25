@@ -1,26 +1,37 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
   entry: "./src/index.js",
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "index_bundle.js",
+  },
+  devtool: "source-map",
   stats: {
     children: true,
   },
   module: {
     rules: [
-      { test: /\.svg$/, use: "svg-inline-loader" },
       {
         test: /\.s[ac]ss$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        loader: "file-loader",
+        options: {
+          publicPath: "../",
+          name: `assets/image/[name].[ext]`,
+        },
+      },
+
       { test: /\.(js)$/, use: "babel-loader" },
     ],
   },
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "index_bundle.js",
-  },
+
   devServer: {
     static: {
       directory: path.join(__dirname, "dist"),
@@ -34,6 +45,9 @@ module.exports = {
       template: "./static/index.html",
       filename: "index.html",
       inject: "body",
+    }),
+    new CopyPlugin({
+      patterns: [{ from: "static", to: "dist" }],
     }),
   ],
 };

@@ -1,7 +1,10 @@
 //Обнуление стилей браузеров
 @import "_normalize";
+//Подключение шрифтов
+@import "_fonts";
 //Подключение переменных
 @import "_variables";
 
 //Подключение блоков
+@import "./blocks/_setting";
 @import "./blocks/_header";

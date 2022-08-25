@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SF UI Text";
+  font-style: normal;
+  background-color: #ffffff;
+  min-width: 320px;
+  color: #000000;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+i {
+  display: block;
+}
+
+.container {
+  max-width: 1420px;
+  margin: auto;
+}
+
+@media screen and (max-width: 560px) {
+  .container {
+    max-width: 100%;
+    margin: auto;
+  }
+}
