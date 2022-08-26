@@ -22,6 +22,10 @@ input {
   outline: none;
 }
 
+textarea {
+  resize: none;
+}
+
 button,
 label {
   border: none;

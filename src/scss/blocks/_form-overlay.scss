@@ -1,0 +1,132 @@
+.form-overlay {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 32px 40px;
+  background-color: #ffffff;
+  max-width: 580px;
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #767676;
+    margin-bottom: 50px;
+  }
+
+  &__label {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #767676;
+    margin-bottom: 7px;
+  }
+
+  &__checktext {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9f9f9f;
+  }
+
+  &__name,
+  &__number {
+    width: 100%;
+    border: 1px solid #c4c4c4;
+    border-radius: 15px;
+    padding: 17px 20px;
+    margin-bottom: 20px;
+  }
+
+  &__info {
+    width: 500px;
+    height: 200px;
+    border: 1px solid #c4c4c4;
+    border-radius: 15px;
+    margin-bottom: 30px;
+  }
+
+  &__checkwrap {
+    display: flex;
+    justify-content: space-between;
+
+    div:nth-child(1) {
+      width: 50%;
+    }
+  }
+
+  &__checkbox {
+    margin-right: 16px;
+  }
+
+  &__button {
+    background: $primaryBlue;
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 18px 28px;
+  }
+
+  &__exit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 64px;
+    height: 64px;
+    background: $secondaryBlue;
+    border-radius: 0px 30px;
+    cursor: pointer;
+
+    div:nth-child(1) {
+      position: relative;
+      left: 25%;
+      width: 32px;
+      height: 2px;
+      background: $primaryBlue;
+      transform: rotate(-135deg);
+    }
+
+    div:nth-child(2) {
+      position: relative;
+      right: 25%;
+      width: 32px;
+      height: 2px;
+      background: $primaryBlue;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .form-overlay {
+    width: 80%;
+
+    &__info {
+      width: 100%;
+    }
+
+    &__checkwrap {
+      flex-direction: column;
+
+      div:nth-child(1) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
