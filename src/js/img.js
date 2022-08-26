@@ -6,6 +6,7 @@ import offer from "../../static/images/offer-img.jpg";
 import footerMessageIcon from "../../static/images/footer-message-icon.svg";
 import footerPhoneIcon from "../../static/images/footer-phone-icon.svg";
 import footerMailIcon from "../../static/images/footer-mail-icon.svg";
+import callIcon from "../../static/images/call-icon.svg";
 
 const headerLogoIcon = document.querySelector(".header__logo__icon");
 headerLogoIcon.style = `background-image:url(${Logo})`;
@@ -30,3 +31,6 @@ footerPhoneMessage.style = `background-image:url(${footerPhoneIcon})`;
 
 const footerMailMessage = document.querySelector(".footer__icon__mail");
 footerMailMessage.style = `background-image:url(${footerMailIcon})`;
+
+const callDie = document.querySelector(".call-die");
+callDie.style = `background-image:url(${callIcon})`;
