@@ -53,6 +53,14 @@
       color: $primaryBlue;
       background-color: inherit;
       margin-left: 37px;
+
+      &:focus,
+      &:hover,
+      &:active {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -73,6 +81,15 @@
       margin-right: 40px;
       cursor: pointer;
       color: #000000;
+
+      &:focus,
+      &:hover,
+      &:active {
+        display: block;
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+      }
     }
   }
 }
