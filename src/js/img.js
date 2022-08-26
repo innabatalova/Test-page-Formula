@@ -7,6 +7,8 @@ import footerMessageIcon from "../../static/images/footer-message-icon.svg";
 import footerPhoneIcon from "../../static/images/footer-phone-icon.svg";
 import footerMailIcon from "../../static/images/footer-mail-icon.svg";
 import callIcon from "../../static/images/call-icon.svg";
+import saleIconImg from "../../static/images/sale-die.jpg";
+import handIcon from "../../static/images/hand-icon.png";
 
 const headerLogoIcon = document.querySelector(".header__logo__icon");
 headerLogoIcon.style = `background-image:url(${Logo})`;
@@ -34,3 +36,9 @@ footerMailMessage.style = `background-image:url(${footerMailIcon})`;
 
 const callDie = document.querySelector(".call-die");
 callDie.style = `background-image:url(${callIcon})`;
+
+const saleDieImg = document.querySelector(".sale-die__img");
+saleDieImg.style = `background-image:url(${saleIconImg})`;
+
+const saleDieHand = document.querySelector(".sale-die__hand");
+saleDieHand.style = `background-image:url(${handIcon})`;
